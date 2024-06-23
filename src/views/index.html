@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style/main.css" />
+  <title>Bitcs NodeJs Assignment</title>
+</head>
+<body>
+  <header>
+    <h1>BITCS NodeJs Assignment</h1>
+  </header>
+  <section>
+    <p id="total-count"></p>
+    <button id="add-cat-btn">Add Cat</button>
+    <div class="search-container">
+      <form id="cat-search">
+        <input id="from-age" type="number" placeholder="Age from" required>
+        <input id="to-age" type="number" placeholder="Age to" required>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+        </tr>
+      </thead>
+      <tbody id="cats-data">
+      </tbody>
+    </table>
+    <div id="btn-div"></div>
+  </section>
+
+  <div id="cat-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Add a New Cat</h2>
+      <form id="cat-form">
+        <label for="cat-name">Name:</label>
+        <input type="text" id="cat-name" name="name" required>
+        <label for="cat-age">Age:</label>
+        <input type="number" id="cat-age" name="age" required>
+        <label for="cat-breed">Breed:</label>
+        <input type="text" id="cat-breed" name="breed" required>
+        <button type="submit">Add Cat</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="/js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/main.css" />
+    <title>Bitcs NodeJs Assignment</title>
+  </head>
+  <body>
+    <div class="card">
+      <h1 id="cat-name"></h1>
+      <p id="age"></p>
+      <p id="breed"></p>
+      <div>
+        <button id="delete-btn" onclick="deleteCat()">Delete</button>
+        <button id="edit-btn" onclick="editCat()">Edit</button>
+        <button id="cancel-btn" onclick="cancelEdit()" style="display:none;">Cancle</button>
+        <button id="save-btn" onclick="saveCat()" style="display:none;">Save</button>
+      </div>
+    </div>
+    <script src="/js/catDetails.js"></script>
+  </body>
+</html>
